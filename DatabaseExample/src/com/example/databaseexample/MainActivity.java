@@ -120,5 +120,8 @@ public class MainActivity extends Activity {
 
 	private void testFunction(){
 	    //Removed something wierd
-	}
+	    //This is a test function
+	    doSomeWierdStuff();
+
+    }
 }
