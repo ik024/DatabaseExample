@@ -80,6 +80,10 @@ public class MainActivity extends Activity {
 		startActivity(new Intent(getApplicationContext(), SecondActivity.class));
 	}
 
+	private void serverTestFunction(){
+
+	}
+
 	private void writeData(File folder, String fileName){
 		String data = edittext.getText().toString();
 		if (!data.trim().isEmpty()) {
