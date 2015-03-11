@@ -18,6 +18,9 @@ public class SecondActivity extends Activity {
 	FileInputStream fis = null;
 	File folder = null;
 
+//hello i am second activity of branch
+
+//i am from master -- branch
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -30,7 +33,7 @@ public class SecondActivity extends Activity {
 		String data = readData(folder, MainActivity.TEXT_FILE_NAME_INTERNAL_STORAGE);
 		tv.setText(data);
 	}
-	
+
 	public void loadFromPrivateCache(View view) {
 		folder = getCacheDir();
 		String data = readData(folder, MainActivity.TEXT_FILE_NAME_CACHE_PRIVATE);
@@ -64,7 +67,7 @@ public class SecondActivity extends Activity {
 	public void goPrevious(View view) {
 		startActivity(new Intent(getApplicationContext(), MainActivity.class));
 	}
-	
+
 	private String readData(File folder, String fileName){
 		File myFile = new File(folder, fileName);
 		StringBuffer buffer = new StringBuffer();
@@ -90,5 +93,5 @@ public class SecondActivity extends Activity {
 		}
 		return buffer.toString();
 	}
-	
+
 }
