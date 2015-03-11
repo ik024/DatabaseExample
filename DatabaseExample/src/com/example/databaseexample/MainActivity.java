@@ -121,6 +121,6 @@ public class MainActivity extends Activity {
 	private void testFunction(){
 	    //This is a test function
 	    doSomeWierdStuff();
-	    anotherWierdStuff();
+	   
 	}
 }
