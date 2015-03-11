@@ -21,7 +21,7 @@ public class MainActivity extends Activity {
 	public final static String TEXT_FILE_NAME_CACHE_PUBLIC = "cachePublicStorageFile1.txt";
 	public final static String TEXT_FILE_NAME_EXT_STORAGE_PRIVATE = "privateExternalStorageFile1.txt";
 	public final static String TEXT_FILE_NAME_EXT_STORAGE_PUBLIC = "publicExternalStorageFile1Ismail Khan.txt";
-	
+
 	private FileOutputStream fos = null;// to write data to file
 	File folder;
 	EditText edittext;
@@ -32,7 +32,7 @@ public class MainActivity extends Activity {
 		setContentView(R.layout.activity_main);
 
 		edittext = (EditText) findViewById(R.id.editText1);
-		
+
 	}
 
 	public void storeInInternalFile(View view) {
@@ -60,7 +60,7 @@ public class MainActivity extends Activity {
 		}else{
 			Toast.makeText(this, "Problem accessing external storage in your device", Toast.LENGTH_LONG).show();
 		}
-		
+
 	}
 
 	public void storePublicDataInExternalStorage(View view) {
@@ -73,13 +73,13 @@ public class MainActivity extends Activity {
 		}else{
 			Toast.makeText(this, "Problem accessing external storage in your device", Toast.LENGTH_LONG).show();
 		}
-		
+
 	}
 
 	public void gotoNextActivity(View view) {
 		startActivity(new Intent(getApplicationContext(), SecondActivity.class));
 	}
-	
+
 	private void writeData(File folder, String fileName){
 		String data = edittext.getText().toString();
 		if (!data.trim().isEmpty()) {
@@ -112,5 +112,8 @@ public class MainActivity extends Activity {
 		} else {
 			Toast.makeText(this, "Enter Some data", Toast.LENGTH_SHORT).show();
 		}
+	}
+
+	private void testFunction(){
 	}
 }
