@@ -19,7 +19,7 @@ public class MainActivity extends Activity {
 //test branch comment1 - lol
 //this comment is for merging purpose added in test branch
 //cherry-pick this comment
-
+//local repo rebase commit
 	public final static String TEXT_FILE_NAME_INTERNAL_STORAGE = "internalStorageFile1.txt";
 	public final static String TEXT_FILE_NAME_CACHE_PRIVATE = "cachePrivateStorageFile1.txt";
 	public final static String TEXT_FILE_NAME_CACHE_PUBLIC = "cachePublicStorageFile1.txt";
