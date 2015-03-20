@@ -16,6 +16,7 @@ import android.widget.Toast;
 
 public class MainActivity extends Activity {
 
+//test branch comment
 	public final static String TEXT_FILE_NAME_INTERNAL_STORAGE = "internalStorageFile1.txt";
 	public final static String TEXT_FILE_NAME_CACHE_PRIVATE = "cachePrivateStorageFile1.txt";
 	public final static String TEXT_FILE_NAME_CACHE_PUBLIC = "cachePublicStorageFile1.txt";
